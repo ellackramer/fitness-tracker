@@ -1,18 +1,23 @@
-const db = require('../models')
-const path = require('path');
+// Import Express router
+const router = require("express").Router();
 
-module.exports = (app) => {
+//Import path
+const path = require("path");
 
-    app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/index.html'));
+// GET Request : Fitness Tracker Home page
+router.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "../public/index.html"));
 });
 
-app.get('/exercise', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/exercise.html'));
+// GET Request : Exercise Page
+router.get("/exercise", (req, res) => {
+  res.sendFile(path.join(__dirname, "../public/exercise.html"));
 });
 
-
-app.get('/stats', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/stats.html'));
+// GET Request : Stats Page
+router.get("/stats", (req, res) => {
+  res.sendFile(path.join(__dirname, "../public/stats.html"));
 });
-}
+
+// Export HTML routes
+module.exports = router;
