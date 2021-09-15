@@ -5,7 +5,7 @@ homework 17 fitness tracker app developed using Node and MongoDB.
 requires NodeJS and MongoDB to run successfully
 
 to install:
-    git clone https://github.com/skuttenkuler/Fitness-Tracker.git
+    git clone https://github.com/ellackramer/Fitness-Tracker.git
 
     cd Fitness\ Tracker/
 
