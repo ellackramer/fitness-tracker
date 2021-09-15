@@ -9,7 +9,7 @@
     "watch": "nodemon server.js",
     "seed": "node seeders/seed.js"
   },
-  "author": "Gauri Khandke",
+  "author": "Ella Kramer",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ellackramer/fitness-tracker/issues"
